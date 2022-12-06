@@ -1,0 +1,14 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.table-skeleton{
+  padding: 17px;
+}
+.select-pagination{
+  display: flex;
+  justify-content: space-between;
+}
