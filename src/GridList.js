@@ -22,17 +22,10 @@ export const GridList = (props) => {
     });
     setGridList(list);
   }, [gridData]);
-  const page = useSelector((state) => state.storeWork.page_no);
-  const rowCount = useSelector((state) => state.storeWork.rowCount);
-  const totalRows = useSelector((state) => state.storeWork.totalRow);
   const [selected, setSelected] = useState("10");
   const handleSelectChange = useCallback((value) => {
     setSelected(value);
-    dispatch(changeRowCount(value));
-    let currentTotalPages = totalRows / rowCount;
-    if(page > currentTotalPages ){
-      dispatch(changePage(1))
-    } 
+      dispatch(changeRowCount(value));
   }, []);
 
   const options = [

@@ -21,7 +21,6 @@ export const storeSlice = createSlice({
       state.rowCount = actions.payload;
     },
     changePage: (state, actions) => {
-      // alert(actions.payload)
       state.page_no = actions.payload;
     },
   },
